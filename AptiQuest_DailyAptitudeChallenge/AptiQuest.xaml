@@ -1,0 +1,185 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1452.0000000000002,1588.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="selectedTopic" />
+      <Variable x:TypeArguments="x:String" Name="QuestionsText" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="602.4,1565.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="568.8,327.2" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Please select the type of aptitude questions you would like to receive:" OptionsString="Arithmetic Aptitude;Data Interpretation;Verbal Ability;Logical Reasoning;Verbal Reasoning;Non-Verbal Reasoning&#xD;&#xA;" Title="Choose Aptitude Topic">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:String">[selectedTopic]</OutArgument>
+        </ui:InputDialog.Result>
+      </ui:InputDialog>
+      <If Condition="[selectedTopic = &quot;Arithmetic Aptitude&quot;]" sap:VirtualizedContainerService.HintSize="568.8,1155.2" sap2010:WorkflowViewState.IdRef="If_1">
+        <If.Then>
+          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="535.2,824.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Problems on Trains - Aptitude Questions and Answers" sap:VirtualizedContainerService.HintSize="501.6,764.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="163d6ddf-042b-43a3-9d55-6d2615ddcdd4" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="467.2,524.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Questions'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='0' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="433.6,189.6" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="163d6ddf-042b-43a3-9d55-6d2615ddcdd4" Version="V4">
+                      <uix:NExtractData.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.indiabix.com/aptitude/problems-on-trains/" DesignTimeRectangle="384, 152, 989, 2441" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl class='ques-wrapper' tag='DIV' /&gt;" Guid="ead345cf-3e94-465a-ac1d-58618b716995" InformativeScreenshot="470d573a25c4ec5c989144296eb67d6d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Problems on Trains - Aptitude Questions and Answers' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
+                      </uix:NExtractData.Target>
+                    </uix:NExtractData>
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,114.4" sap2010:WorkflowViewState.IdRef="Assign_2">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[QuestionsText]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[String.Join(Environment.NewLine, ExtractDataTable.AsEnumerable().Select(Function(row) row("Question").ToString()))]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="Desktop\Aptitude.txt" sap:VirtualizedContainerService.HintSize="433.6,159.2" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[QuestionsText]" />
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="4d71f3bfa619d8faba4ea0284c6e0865.jpg" Selector="&lt;html app='chrome.exe' title='Problems on Trains - Aptitude Questions and Answers' /&gt;" Title="Problems on Trains - Aptitude Questions and Answers" Url="https://www.indiabix.com/aptitude/problems-on-trains/" Version="V2" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </If.Then>
+        <If.Else>
+          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,168.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="382.4,108.8" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Invalid Option selected ! please choose valid option&quot;]" />
+          </Sequence>
+        </If.Else>
+      </If>
+    </Sequence>
+  </Sequence>
+</Activity>
